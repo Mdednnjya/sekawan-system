@@ -53,7 +53,7 @@
                             <label class="block text-sm font-medium text-gray-700 mb-2">Role</label>
                             <div class="space-x-4">
                                 <label class="inline-flex items-center">
-                                    <input type="radio" name="role" value="admin" class="form-radio text-cyan-600">
+                                    <input type="radio" name="role" value="admin" class="form-radio text-cyan-600" checked>
                                     <span class="ml-2">Admin</span>
                                 </label>
                                 <label class="inline-flex items-center">
@@ -61,6 +61,11 @@
                                     <span class="ml-2">Approver</span>
                                 </label>
                             </div>
+                        </div>
+
+                        <div id="position-field" class="hidden">
+                            <label for="position" class="block text-sm font-medium text-gray-700">Position</label>
+                            <input type="text" name="position" id="position" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cyan-500 focus:border-cyan-500">
                         </div>
 
                         <button type="submit" class="w-full bg-teal-800 text-white py-2 px-4 rounded-md hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">

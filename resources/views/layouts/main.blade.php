@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sekawan-system</title>
     <link rel="icon" href="{{ asset('images/logo.svg') }}" type="image/icon" />
+    @vite(['resources/js/app.js'])
 </head>
 <body class="bg-gray-50">
 <div class="min-h-screen flex flex-col">
     @include('components.header')
 
+    <div class="bg-green-500">blabla</div>
     <main class="flex-grow">
         @yield('content')
     </main>

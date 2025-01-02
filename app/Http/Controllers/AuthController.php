@@ -47,7 +47,12 @@ class AuthController extends Controller
             'password' => ['required', 'string', 'min:8'],
             'region_id' => ['required', 'exists:regions,id'],
             'role' => ['required', 'in:admin,approver'],
+            'position' => ['string']
         ]);
+
+        if ($validated['role'] == 'admin') {
+            $validated['position'] = 'System Administrator';
+        }
 
         $user = User::create([
             'name' => $validated['name'],
@@ -55,6 +60,7 @@ class AuthController extends Controller
             'password' => Hash::make($validated['password']),
             'region_id' => $validated['region_id'],
             'role' => $validated['role'],
+            'position' => $validated['position']
         ]);
 
         Auth::login($user);

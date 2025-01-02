@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Region;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\support\Facades\Hash;
+use App\Models\User;
 
 class AuthController extends Controller
 {

@@ -19,7 +19,7 @@
                 <form action="{{ route('register') }}" method="POST">
                     @csrf
 
-                    <div class="space-y-6">
+                    <div class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
                             <input type="text" name="name" id="name" value="{{ old('name') }}" required
@@ -76,7 +76,7 @@
 
                 <div class="mt-4 text-center text-sm text-gray-600">
                     Already have an account?
-                    <a href="{{ route('login') }}" class="text-cyan-600 hover:text-cyan-500">Log in</a>
+                    <a href="/" class="text-cyan-600 hover:text-cyan-500">Log in</a>
                 </div>
             </div>
         </div>

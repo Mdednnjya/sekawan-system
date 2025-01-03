@@ -1,10 +1,12 @@
 <nav class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div class="flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="w-10 h-10 bg-cyan-500 rounded-full"></div>
-                <span class="ml-3 text-xl font-semibold">Sekawan System</span>
-            </div>
+            <a href="/">
+                <div class="flex items-center">
+                    <img src="/images/logo.svg">
+                    <span class="ml-3 text-xl font-medium">Sekawan System</span>
+                </div>
+            </a>
             @auth
                 <div class="flex items-center space-x-4">
                     <span class="text-gray-700">{{ auth()->user()->name }}</span>

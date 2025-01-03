@@ -13,7 +13,6 @@
 <div class="min-h-screen flex flex-col">
     @include('components.header')
 
-    <div class="bg-green-500">blabla</div>
     <main class="flex-grow">
         @yield('content')
     </main>

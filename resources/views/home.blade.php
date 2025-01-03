@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
-    <h1>qwe</h1><div class="flex items-center justify-center min-h-[calc(100vh-10rem)]">
+    <div class="flex items-center justify-center min-h-[calc(100vh-10rem)]">
         @auth
             <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-white rounded-lg shadow-sm p-8">
